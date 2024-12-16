@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetbot Chat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Chatbox Container -->
+    <div class="chat-container">
+        <div class="vetbot-text">Vetbot</div> <!-- Fun "Vetbot" Text Overlay -->
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <h3>Welcome to Vetbot!</h3>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="message bot">
+                    <p>Hi there! How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <textarea id="userInput" placeholder="Type a message..." rows="2"></textarea>
+                <button id="sendMessage" class="send-button">Send</button>
+            </div>
+            <div class="quote-section">
+                <p>"The greatness of a nation and its moral progress can be judged by the way its animals are treated." – Mahatma Gandhi</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
