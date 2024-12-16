@@ -5,7 +5,7 @@ window.onload = function () {
         <div class="message bot">
             <p>
                 Hi! I’m VetBot, your virtual assistant!
-                How can I assist you today? Visit our site <a href="https://pawsitivevet2024.com" target="_blank">here</a>.
+                How can I assist you today? Visit our site <a href="https://pawsitivevet2024.wordpress.com" target="_blank">here</a>.
             </p>
         </div>
     `;
