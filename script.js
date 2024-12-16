@@ -1,13 +1,12 @@
 window.onload = function () {
-    // Display combined greeting message when the page loads
+    // Display shortened greeting message when the page loads
     const chatBody = document.getElementById('chatBody');
     chatBody.innerHTML += `
         <div class="message bot">
             <p>
-                Hi! I’m VetBot, your virtual assistant. Welcome to Pawsitivevet2024 – Compassionate care for your furry family members! 
-                I’m here to guide you through our Pet Wellness Hub. Our content includes preventive care tips, weekly pet care tips, 
-                and business management insights for veterinary professionals. How can I help you today? Are you looking for something specific? 
-                Check out our website <a href="https://pawsitivevet2024.wordPress.com" target="_blank">here</a>.
+                Hi! I’m VetBot, your virtual assistant. 
+                I’m here to help with pet wellness tips and vet management insights. 
+                How can I assist you today? Visit our site <a href="https://pawsitivevet2024.wordpress.com" target="_blank">here</a>.
             </p>
         </div>
     `;
@@ -26,18 +25,44 @@ document.getElementById('sendMessage').addEventListener('click', function () {
             </div>
         `;
 
-        // Bot response placeholder
+        // Bot response based on user input
+        let botResponse = "I'm here to help! Let me know your query or issue.";
+
+        // Triggering words
+        if (userInput.toLowerCase().includes('hello')) {
+            botResponse = "Hello! How can I assist you today?";
+        } else if (userInput.toLowerCase().includes('wellness')) {
+            botResponse = "I can provide tips on pet wellness. What would you like to know?";
+        } else if (userInput.toLowerCase().includes('vet')) {
+            botResponse = "I can help with veterinary insights. How can I guide you today?";
+        }
+
+        // Typing indicator
         setTimeout(function () {
             chatBody.innerHTML += `
-                <div class="message bot">
-                    <p>I'm here to help! Let me know your query or issue.</p>
+                <div class="message bot typing">
+                    <p>...</p>
                 </div>
             `;
-            // Scroll to the bottom of the chat
-            chatBody.scrollTop = chatBody.scrollHeight;
+            // Simulate delay before actual response
+            setTimeout(function () {
+                chatBody.innerHTML += `
+                    <div class="message bot">
+                        <p>${botResponse}</p>
+                    </div>
+                `;
+                // Scroll to the bottom of the chat
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }, 1000);
         }, 1000);
     }
 
     // Clear the input field
     document.getElementById('userInput').value = '';
+});
+
+// Function for auto-resizing textarea
+document.getElementById('userInput').addEventListener('input', function () {
+    this.style.height = 'auto';
+    this.style.height = (this.scrollHeight) + 'px';
 });
