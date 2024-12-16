@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-image: url('https://your-image-link.com/photo.jpg'); /* Your image link here */
+    background-image: url('resized_pet_photo.jpg'); /* Your image link here */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
