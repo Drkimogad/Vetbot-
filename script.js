@@ -7,7 +7,7 @@ window.onload = function () {
                 Hi! I’m VetBot, your virtual assistant. Welcome to Pawsitivevet2024 – Compassionate care for your furry family members! 
                 I’m here to guide you through our Pet Wellness Hub. Our content includes preventive care tips, weekly pet care tips, 
                 and business management insights for veterinary professionals. How can I help you today? Are you looking for something specific? 
-                Check out our website <a href="https://pawsitivevet2024.com" target="_blank">here</a>.
+                Check out our website <a href="https://pawsitivevet2024.wordPress.com" target="_blank">here</a>.
             </p>
         </div>
     `;
