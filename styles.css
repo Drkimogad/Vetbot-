@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-image: url('resized_pet_photo.jpg'); /* Your image link here */
+    background-image: url('resized_pet_photo.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -21,9 +21,9 @@ body {
 
 .chat-container {
     position: relative;
-    width: 500px; /* Chatbox size */
-    height: 650px; /* Chatbox size increased to accommodate quote */
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for better contrast */
+    width: 500px;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@ body {
     overflow-y: auto;
     max-height: 60%;
     font-size: 1.2rem;
-    background-color: #f4f4f4; /* Light background for chat area */
+    background-color: #f4f4f4;
 }
 
 .message {
@@ -68,6 +68,11 @@ body {
 .message.bot {
     background-color: #61dafb;
     color: #333;
+}
+
+.typing-indicator {
+    font-style: italic;
+    color: #999;
 }
 
 .chat-footer {
@@ -113,26 +118,3 @@ textarea {
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     letter-spacing: 5px;
     text-transform: uppercase;
-    font-family: 'Arial', sans-serif;
-    z-index: -1;
-}
-
-.quote-section {
-    background-color: rgba(255, 255, 255, 0.8); /* Light background for quote */
-    padding: 15px;
-    border-radius: 8px;
-    font-style: italic;
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 15px;
-    color: #333;
-}
-
-@media screen and (max-width: 768px) {
-    .chat-container {
-        width: 90%;
-        bottom: 5%;
-        right: 5%;
-        height: 500px;
-    }
-}
