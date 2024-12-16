@@ -4,8 +4,8 @@ window.onload = function () {
     chatBody.innerHTML += `
         <div class="message bot">
             <p>
-                Hi! I’m VetBot, your virtual assistant!
-                How can I assist you today? Visit our site <a href="https://pawsitivevet2024.wordpress.com" target="_blank">here</a>.
+                Hi! I’m VetBot, your virtual assistant.
+                How can I assist you today? Visit our site instead <a href="https://pawsitivevet2024.wordpress.com" target="_blank">here</a>.
             </p>
         </div>
     `;
@@ -38,9 +38,9 @@ document.getElementById('sendMessage').addEventListener('click', function () {
         else if (userInput.toLowerCase().includes('veterinarian') || userInput.toLowerCase().includes('dog') || userInput.toLowerCase().includes('cat')) {
             botResponse = "We recommend annual check-ups for healthy pets. Puppies and kittens may need more frequent visits for vaccinations and growth monitoring. Check our website for more info!";
         } else if (userInput.toLowerCase().includes('vaccination')) {
-            botResponse = "Vaccinations are essential! Common ones include rabies, distemper, and parvovirus. For a detailed schedule, check out our article [Importance of Vaccinations for Pets](https://pawsitivevet2024.com).";
+            botResponse = "Vaccinations are essential! Common ones include rabies, distemper, and parvovirus. For a detailed schedule, check out our article [Importance of Vaccinations for Pets](https://pawsitivevet2024.wordpress.com).";
         } else if (userInput.toLowerCase().includes('deworming')) {
-            botResponse = "Deworming is important for your pet's health. Learn more about it in our guide [The Importance of Deworming for Pets](https://pawsitivevet2024.com).";
+            botResponse = "Deworming is important for your pet's health. Learn more about it in our guide [The Importance of Deworming for Pets](https://pawsitivevet2024.wordpress.com).";
         } else if (userInput.toLowerCase().includes('illness')) {
             botResponse = "If your pet is ill, please contact us immediately. Symptoms such as vomiting or diarrhea require prompt attention.";
         }
@@ -78,7 +78,7 @@ document.getElementById('sendMessage').addEventListener('click', function () {
         } else if (userInput.toLowerCase().includes('pregnant')) {
             botResponse = "For a pregnant pet, it's essential to schedule a veterinary visit for proper care and nutrition during pregnancy.";
         } else if (userInput.toLowerCase().includes('training')) {
-            botResponse = "We provide tips for basic training. You can also check our podcast series on canine behavioral problems [Pawsitive Pet Training](https://pawsitivevet2024.com).";
+            botResponse = "We provide tips for basic training. You can also check our podcast series on canine behavioral problems [Pawsitive Pet Training](https://pawsitivevet2024.wordpress.com).";
         }
 
         // Typing indicator with response
